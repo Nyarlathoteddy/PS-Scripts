@@ -7,9 +7,9 @@ c. Major
 
 d. YearBorn (calculate using Age and current date and pass the info into the property value) #>
 $Person = New-Object System.Object
-Add-Member -MemberType NoteProperty -Name Name -Value "Gage Rotz" -InputObject $Person
+Add-Member -MemberType NoteProperty -Name Name -Value "Teddy" -InputObject $Person
 Add-Member -MemberType NoteProperty -Name Age -Value 20 -InputObject $Person
-Add-Member -MemberType NoteProperty -Name Major -Value "Network Administration & Engineering" -InputObject $Person
+Add-Member -MemberType NoteProperty -Name Major -Value "Degree" -InputObject $Person
 $yearBorn = (Get-Date -Format yyyy) - $Person.Age
 if ((Get-Date -Format ddMM) -lt (Get-Date -Day 16 -Month 6 -Format ddMM)) {
     $yearborn--
